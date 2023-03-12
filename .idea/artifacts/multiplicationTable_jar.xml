@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="multiplicationTable:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/multiplicationTable_jar</output-path>
+    <root id="archive" name="multiplicationTable.jar">
+      <element id="module-output" name="multiplicationTable" />
+    </root>
+  </artifact>
+</component>

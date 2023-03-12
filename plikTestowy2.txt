@@ -1,0 +1,9 @@
+Siemaneczko świecie! Wreszcie coś zapisuję do pliku, co nie jest tylko numerem;)
+Cały plik jest dłuższy. 
+Zawiera wiele linni. Kolejne to: 8
+1
+2
+3
+4
+5, 7, 5, 125
+No i to już koniec linii tekstu:)

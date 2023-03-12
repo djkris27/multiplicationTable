@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LambdaTest/LambdaTest.iml" filepath="$PROJECT_DIR$/LambdaTest/LambdaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrafficLight/TrafficLight.iml" filepath="$PROJECT_DIR$/TrafficLight/TrafficLight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiplicationTable.iml" filepath="$PROJECT_DIR$/multiplicationTable.iml" />
+    </modules>
+  </component>
+</project>
