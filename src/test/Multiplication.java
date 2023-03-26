@@ -6,7 +6,6 @@ import java.util.Random;
 public class Multiplication{
     private int number1, number2, result;
 
-    //Max Number1 and Number2 = 10; MaxResult = 100
     Multiplication(int maxNumber, int maxResult){
         Random rand = new Random();
         while (true) {
@@ -18,9 +17,6 @@ public class Multiplication{
         result = number1 * number2;
     }
 
-    public int getResult() {
-        return result;
-    }
 
     public int getNumber1() {
         return number1;
@@ -30,8 +26,12 @@ public class Multiplication{
         return number2;
     }
 
-    public boolean isGoodResult(int checkResult){
-        return (checkResult == result) ? true : false;
+    public int getResult() {
+        return result;
+    }
+
+    public boolean isGoodResult(int checkedResult){
+        return (checkedResult == result) ? true : false;
     }
 
     public boolean isEqual(int checkNumber1, int checkNumber2){
@@ -51,7 +51,7 @@ public class Multiplication{
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Version 2.0
+//Version 2.0 - OLD
 /*
 //package IdeaProjects.MultiplicationTable.src;
 import java.util.Random;
