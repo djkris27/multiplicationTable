@@ -1,12 +1,14 @@
-package test;
 //Version 3.0 (start typing: 2023-02-26)
+//MultiplicationGenerator generate one or several Multiplications
+
+package test;
 
 public class MultiplicationGenerator {
     public static Multiplication generateMultiplication(int maxNumber, int maxResult){
         return new Multiplication(maxNumber, maxResult);
     }
 
-    //this generator generate table containt differents Multiplication - without repeating.
+    //this generator generate table containt differents Multiplications - without repeating.
     //TO DO: change method to catch exception, when it has no chance to no repeating.
     public static Multiplication[] generateMultiplication(int maxNumber, int maxResult, int quantity){
         Multiplication[] table = new Multiplication[quantity];

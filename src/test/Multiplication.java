@@ -1,6 +1,7 @@
-package test;
-//Version 3.0 (start typing: 2023-02-26)
+//Version 3.0 (start typing: 2023-02-26).
+//This class is One Multiplication Test - we can generate one operation and check, if our result is correct.
 
+package test;
 import java.util.Random;
 
 public class Multiplication{
@@ -16,7 +17,6 @@ public class Multiplication{
         }
         result = number1 * number2;
     }
-
 
     public int getNumber1() {
         return number1;
@@ -47,51 +47,3 @@ public class Multiplication{
         return number1 + " * " + number2 + " = ";
     }
 }
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Version 2.0 - OLD
-/*
-//package IdeaProjects.MultiplicationTable.src;
-import java.util.Random;
-
-public class Multiplication {
-    private int number1, number2, answer = 0;
-
-    Multiplication(int maxAnswer){
-        Random rand = new Random();
-        while (true) {
-            number1 = rand.nextInt(10)+1;
-            number2 = rand.nextInt(10)+1;
-            if ((number1*number2) <= maxAnswer)
-                break;
-        }
-    }
-
-    Multiplication(int a, int b){
-        number1 = a;
-        number2 = b;
-    }
-
-    public int getAnswer() {
-        return answer;
-    }
-
-    public int getNumber1() {
-        return number1;
-    }
-
-    public int getNumber2() {
-        return number2;
-    }
-
-    void putAnswer(int a){
-        answer = a;
-    }
-
-    boolean isGoodAnswer(){
-        return (answer == number1 * number2) ? true : false;
-    }
-}
-*/

@@ -1,3 +1,4 @@
+//Multiplication table - terminal version (System.Out)
 package test;
 
 import java.util.Scanner;
@@ -5,7 +6,7 @@ import java.util.Scanner;
 public class MultiplicationTestDemo {
     public static void main(String [] args){
         UserData userData = new UserData();
-        MultiplicationTest test = new MultiplicationTest(userData.getName(), userData.getMaxNumber(), userData.getMaxResult(), userData.getQuanity());
+        MultiplicationTestStdOut test = new MultiplicationTestStdOut(userData.getName(), userData.getMaxNumber(), userData.getMaxResult(), userData.getQuanity());
 
         test.timeStart();
         for (int i = 0; i < test.getQuantity(); i++){
