@@ -20,7 +20,6 @@ public class MultiplicationGenerator {
             }
             if (repeat)
                 i--;
-
         }
         return table;
     }
