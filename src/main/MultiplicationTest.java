@@ -1,5 +1,11 @@
 package main;
 
+/***********************************************************************************************
+ * TO DO:
+ * - change, when score and another elements are couted (maybe add countAllScoreNow() method??)
+ *
+ * ************************************************************************************************/
+
 public class MultiplicationTest{
     private String name;
     private int quantity;
@@ -59,6 +65,10 @@ public class MultiplicationTest{
             ratingScore = 2;
         else
             ratingScore = 1;
+    }
+
+    public int getScore(){
+        return score;
     }
 
     public int getQuantity(){

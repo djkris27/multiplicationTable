@@ -37,9 +37,16 @@ public class GetDataFromUser {
                 scan.nextLine();
             }
             if (!((number > 0) && (number <= max)))
-                System.out.println("Please write proper number and click ENTER:");
+                System.out.println("Please write proper number from 1 to " + max + " and click ENTER:");
         } while (!((number > 0) && (number <= max)));
         return number;
+    }
+
+
+    //get only ENTER from user;) e. g. to start test.
+    public static void getENTER() {
+        Scanner scan = new Scanner(System.in);
+        scan.nextLine();
     }
 
 
