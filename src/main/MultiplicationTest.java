@@ -13,7 +13,6 @@ public class MultiplicationTest{
 
     MultiplicationTest(String getName, int maxNumber, int maxResult, int getQuantity){
         name = getName;
-
         quantity = getQuantity;
         multiplicatioinTable = MultiplicationGenerator.generateMultiplication(maxNumber, maxResult, quantity);
         multiplicationTableAnswer = new int[quantity];
