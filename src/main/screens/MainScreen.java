@@ -1,5 +1,7 @@
-package main;
+package main.screens;
 //Version 3.1 (start typing: 2023-09-16)
+
+import main.*;
 
 public class MainScreen {
     private static void clearScreen(){

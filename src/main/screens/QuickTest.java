@@ -1,4 +1,6 @@
-package main;
+package main.screens;
+
+import main.*;
 
 /***********************************************************************************************
  * TO DO:
@@ -35,6 +37,8 @@ public class QuickTest {
         System.out.println("You answer <x> question out of 10. " + multiplicationTest.getScore() + " answers was good. Your correctness is " + multiplicationTest.getPercentScore()*100 + "%.");
         System.out.print("Your grade is " + multiplicationTest.getRatingScore());
         System.out.println((multiplicationTest.getRatingScore() > 4) ? " - good job!" : " - practice some more...");
+        System.out.println("Incorrect answers:");
+        multiplicationTest.showMistakes();
         System.out.println("Click ENTER to back to main screen.");
         GetDataFromUser.getENTER();
     }

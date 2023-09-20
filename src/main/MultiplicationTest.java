@@ -17,7 +17,7 @@ public class MultiplicationTest{
 
 
 
-    MultiplicationTest(String getName, int maxNumber, int maxResult, int getQuantity){
+    public MultiplicationTest(String getName, int maxNumber, int maxResult, int getQuantity){
         name = getName;
         quantity = getQuantity;
         multiplicatioinTable = MultiplicationGenerator.generateMultiplication(maxNumber, maxResult, quantity);
@@ -35,7 +35,7 @@ public class MultiplicationTest{
     public void showMistakes(){
         for (int i = 0; i < multiplicatioinTable.length; i++)
             if (!multiplicatioinTable[i].isGoodResult(multiplicationTableAnswer[i]))
-                System.out.println("Wynik działania " + multiplicatioinTable[i].getNumber1() + " * " + multiplicatioinTable[i].getNumber2() + " = " + multiplicatioinTable[i].getResult() + ", a nie " + multiplicationTableAnswer[i]);
+                System.out.println("Correct answer of " + multiplicatioinTable[i].getNumber1() + " * " + multiplicatioinTable[i].getNumber2() + " = " + multiplicatioinTable[i].getResult() + ", not " + multiplicationTableAnswer[i]);
     }
 
     public float getPercentScore(){
