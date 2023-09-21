@@ -19,6 +19,7 @@ public class MainScreen {
         name = GetDataFromUser.getString();
         System.out.println("Hello " + name + "! What you want to do?");
         do {
+            clearScreen();
             System.out.println("1. Quick multiplication test (1 minute, 10 answers, max result 100)."); //quickTest
             System.out.println("2. Multiplication timed test (you configure parameters and time)."); //basicTest
             System.out.println("3. Check how fast you are (you configure parameters)."); //howFastTest
@@ -32,17 +33,14 @@ public class MainScreen {
             }
             else if (choice == 2){
                 clearScreen();
-                //TO BE COUNTINUE...
-                System.out.println("Basic test");
+                new BasicTest();
             }
             else if (choice == 3){
                 clearScreen();
-                //TO BE COUNTINUE...
-                System.out.println("How Fast Test");
+                new HowFastTest();
             }
             else if (choice == 4){
                 clearScreen();
-                //TO BE COUNTINUE...
                 System.out.println("Bye bye...");
             }
         } while (choice != EXIT);

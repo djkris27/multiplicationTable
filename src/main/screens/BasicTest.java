@@ -8,17 +8,26 @@ import main.*;
  *
  * ************************************************************************************************/
 
-public class QuickTest {
-    public QuickTest(){
-        final int MAXNUMBER = 10;
-        final int MAXRESULT = 100;
-        final int QUANTITY = 10;
-        final int TIME = 60;
+public class BasicTest {
+    public BasicTest(){
+        final int MAXNUMBER;
+        final int MAXRESULT;
+        final int QUANTITY;
+        final int TIME;
         int result = 0;
 
         //PREPARATION
+        System.out.println("Please enter time of test in seconds (max 5 minute):");
+        TIME = GetDataFromUser.getInt(5*60);
+        System.out.println("Please enter multiplication quantity (max 100):");
+        QUANTITY = GetDataFromUser.getInt(100);
+        System.out.println("Please enter max multiplicatioin component: (max 20)");
+        MAXNUMBER = GetDataFromUser.getInt(20);
+        System.out.println("Please enter max result (max 400):");
+        MAXRESULT = GetDataFromUser.getInt(400);
+
         MultiplicationTest multiplicationTest = new MultiplicationTest("TEST", MAXNUMBER, MAXRESULT, QUANTITY);
-        System.out.println("You have 1 minute to answer 10 questions. Click ENTER to start. Good luck:)");
+        System.out.println("You have " + TIME + " seconds to answer " + QUANTITY + " questions. Click ENTER to start. Good luck:)");
         GetDataFromUser.getENTER();
 
 

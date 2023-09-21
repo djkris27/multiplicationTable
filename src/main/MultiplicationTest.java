@@ -6,6 +6,13 @@ package main;
  *
  * ************************************************************************************************/
 
+class NotStartTimerException extends Exception{
+    public NotStartTimerException(){
+        super();
+    }
+}
+
+
 public class MultiplicationTest{
     private String name;
     private int quantity;
@@ -33,9 +40,12 @@ public class MultiplicationTest{
     }
 
     public void showMistakes(){
-        for (int i = 0; i < multiplicatioinTable.length; i++)
+        for (int i = 0; i < multiplicatioinTable.length; i++) {
+            if (multiplicationTableAnswer[i] == 0)
+                break;
             if (!multiplicatioinTable[i].isGoodResult(multiplicationTableAnswer[i]))
                 System.out.println("Correct answer of " + multiplicatioinTable[i].getNumber1() + " * " + multiplicatioinTable[i].getNumber2() + " = " + multiplicatioinTable[i].getResult() + ", not " + multiplicationTableAnswer[i]);
+        }
     }
 
     public float getPercentScore(){
@@ -87,11 +97,18 @@ public class MultiplicationTest{
         timeStop = System.currentTimeMillis();
     }
 
-    public int getTestTime(){
-        if ((timeStart != 0) && (timeStop != 0))
-            return (int)((timeStop - timeStart)/1000);
-        else
-            return -1;
+    public int getTestTime() throws NotStartTimerException{
+        if (timeStart != 0) {
+            if (timeStop != 0){
+                return (int)((timeStop - timeStart)/1000);
+            }
+            else {
+                return (int)((System.currentTimeMillis() - timeStart)/1000);
+            }
+        }
+        else {
+            throw new NotStartTimerException();
+        }
     }
 
 }

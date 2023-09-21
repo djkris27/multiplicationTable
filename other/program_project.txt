@@ -51,8 +51,6 @@ Click ENTER to back to main screen.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 III -> 3. screen
-Please enter multiplication quantity (max 100):
-<quantity> 
 Please enter max multiplicatioin component:
 <max_multiplication_component>
 Please enter max result:
@@ -60,12 +58,11 @@ Please enter max result:
 
 
 III -> 3. test screen
-Calculate <quantity> task. Good Luck!
+You have got 1 minute for test. Calculate as many excercise as you can. Try not to make a mistake;) Good Luck!
 Click ENTER to start.
 
 
 III -> 3. summary screen
-You answer <x> question out of <quantity>. <y> answers was good. Your correctness is <z>%.
-Your complete tasks in <time> seconds. 
+You answer <x> question. <y> answers was good. Your correctness is <z>%.
 Your grade is <i> - good job! / practice some more...
 Click ENTER to back to main screen.
