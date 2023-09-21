@@ -1,3 +1,5 @@
+//2023-09-21 6:18 CHECK IF THIS CLASS IS NEEDED...
+/*
 package main;
 import java.util.Scanner;
 
@@ -68,3 +70,4 @@ public class UserData {
     }
 
 }
+*/

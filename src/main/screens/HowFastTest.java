@@ -67,7 +67,7 @@ public class HowFastTest {
         /****************
          * Change count a grade and corectness - not for all quantity of questions, but by answered questions.
          */
-        System.out.println("You answer <x> question. " + multiplicationTest.getScore() + " answers was good. Your correctness is " + multiplicationTest.getPercentScore()*100 + "%.");
+        System.out.println("You answer to " + multiplicationTest.getAnsweredQuantity() + " question. " + multiplicationTest.getScore() + " answers was good. Your correctness is " + multiplicationTest.getPercentScore()*100 + "%.");
         System.out.print("Your grade is " + multiplicationTest.getRatingScore());
         System.out.println((multiplicationTest.getRatingScore() > 4) ? " - good job!" : " - practice some more...");
         System.out.println("Incorrect answers:");

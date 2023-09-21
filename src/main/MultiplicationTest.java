@@ -85,6 +85,18 @@ public class MultiplicationTest{
         return quantity;
     }
 
+    //return quantity of responses provided in test
+    public int getAnsweredQuantity(){
+        int realQuantity = 0;
+        for (int answer : multiplicationTableAnswer){
+            if (answer != 0)
+                realQuantity++;
+            else
+                break;
+        }
+        return quantity;
+    }
+
     public String getName(){
         return name;
     }
