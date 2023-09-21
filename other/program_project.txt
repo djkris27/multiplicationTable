@@ -1,0 +1,68 @@
+2023-09-14 Basic Multiplication Table Program project:
+
+I screen:
+Hello! I am Multiplication Table Test Program! Would you play with me?
+Please tell me your name:
+<name>
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+II screen:
+Hello <name>! What you want to do?
+1. Quick multiplication test (1 minute, 10 answers, max result 100).
+2. Multiplication timed test (you configure parameters and time).
+3. Check how fast you are (you configure parameters).
+4. Its enough for today - EXIT APP.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+III -> 1. screen
+You have 1 minute to answer 10 questions. Click ENTER to start. Good luck:)
+
+
+III -> 1. summary screen
+You answer <x> question out of 10. <y> answers was good. Your correctness is <z>%. 
+Your grade is <i> - good job! / practice some more...
+Click ENTER to back to main screen.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+III -> 2. screen
+Please enter time of test (max 5 minute):
+<time>
+Please enter multiplication quantity (max 100):
+<quantity> 
+Please enter max multiplicatioin component:
+<max_multiplication_component>
+Please enter max result:
+<max_result>
+
+
+III -> 2. test screen
+You have got <time> minutes to test. Calculate <quantity> task. Good Luck!
+Click ENTER to start.
+
+
+III -> 2. summary screen
+You answer <x> question out of <quantity>. <y> answers was good. Your correctness is <z>%.
+Your grade is <i> - good job! / practice some more...
+Click ENTER to back to main screen.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+III -> 3. screen
+Please enter max multiplicatioin component:
+<max_multiplication_component>
+Please enter max result:
+<max_result>
+
+
+III -> 3. test screen
+You have got 1 minute for test. Calculate as many excercise as you can. Try not to make a mistake;) Good Luck!
+Click ENTER to start.
+
+
+III -> 3. summary screen
+You answer <x> question. <y> answers was good. Your correctness is <z>%.
+Your grade is <i> - good job! / practice some more...
+Click ENTER to back to main screen.
