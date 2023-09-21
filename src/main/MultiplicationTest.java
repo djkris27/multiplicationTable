@@ -1,10 +1,10 @@
 package main;
 
-/***********************************************************************************************
- * TO DO:
- * - change, when score and another elements are couted (maybe add countAllScoreNow() method??)
- *
- * ************************************************************************************************/
+///***********************************************************************************************
+// * TO DO:
+// * - change, when score and another elements are counted (maybe add countAllScoreNow() method??)
+// *
+// * ************************************************************************************************/
 
 class NotStartTimerException extends Exception{
     public NotStartTimerException(){
