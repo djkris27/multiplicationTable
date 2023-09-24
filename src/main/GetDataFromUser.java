@@ -3,9 +3,9 @@ package main;
 import java.util.Scanner;
 
 public class GetDataFromUser {
+    private static Scanner scan = new Scanner(System.in);
     //get String from user (e. g. name)
     public static String getString() {
-        Scanner scan = new Scanner(System.in);
         final String GETSTRINGFROMUSERERROR = "GetStringFromUserError...";
         String text = GETSTRINGFROMUSERERROR;
 
@@ -14,7 +14,7 @@ public class GetDataFromUser {
                 text = scan.nextLine();
             } catch (Exception e) {
                 System.err.println("ERROR WHILE READING STRING FROM USER!");
-                System.err.println(e.toString());System.out.println("Please write proper text and click ENTER:");
+                System.err.println(e.toString());
                 System.out.println("Please write proper text and click ENTER:");
                 scan.nextLine();
             }
@@ -23,9 +23,8 @@ public class GetDataFromUser {
     }
 
 
-    //get int from user from 0 to max
+    //get int from user in the range from 0 to max
     public static int getInt(int max) {
-        Scanner scan = new Scanner(System.in);
         int number = 0;
 
         do {
@@ -39,13 +38,13 @@ public class GetDataFromUser {
             if (!((number > 0) && (number <= max)))
                 System.out.println("Please write proper number from 1 to " + max + " and click ENTER:");
         } while (!((number > 0) && (number <= max)));
+        scan.nextLine();
         return number;
     }
 
 
     //get only ENTER from user;) e. g. to start test.
     public static void getENTER() {
-        Scanner scan = new Scanner(System.in);
         scan.nextLine();
     }
 
